@@ -3,9 +3,9 @@ import IOKit
 import IOKit.usb
 
 class DeviceMonitor: ObservableObject {
-    @Published var connectedDevices: [String] = []
-    @Published var disconnectedDevices: [String] = []
-    
+    @Published var connectedDevices: [DeviceInfo] = []
+    @Published var disconnectedDevices: [DeviceInfo] = []
+
     private var addedDevices: Set<String> = []
     private var removedDevices: Set<String> = []
     
@@ -39,8 +39,8 @@ class DeviceMonitor: ObservableObject {
         let deviceName = getDeviceName(service)
         
         if let name = deviceName {
-            addedDevices.insert(name)
-            connectedDevices.append(name)
+            let deviceInfo = DeviceInfo(name: name, date: Date())
+            connectedDevices.append(deviceInfo)
         }
     }
     
@@ -48,8 +48,8 @@ class DeviceMonitor: ObservableObject {
         let deviceName = getDeviceName(service)
         
         if let name = deviceName {
-            removedDevices.insert(name)
-            disconnectedDevices.append(name)
+            let deviceInfo = DeviceInfo(name: name, date: Date())
+            disconnectedDevices.append(deviceInfo)
         }
     }
     
