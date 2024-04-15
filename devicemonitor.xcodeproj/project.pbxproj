@@ -14,6 +14,8 @@
 		EB5AF58B2BCD2B5900506969 /* devicemonitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF58A2BCD2B5900506969 /* devicemonitorTests.swift */; };
 		EB5AF5952BCD2B5900506969 /* devicemonitorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF5942BCD2B5900506969 /* devicemonitorUITests.swift */; };
 		EB5AF5972BCD2B5900506969 /* devicemonitorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF5962BCD2B5900506969 /* devicemonitorUITestsLaunchTests.swift */; };
+		EB5AF5A42BCD2C2500506969 /* DeviceMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF5A32BCD2C2500506969 /* DeviceMonitor.swift */; };
+		EB5AF5A62BCD2C6500506969 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5AF5A52BCD2C6500506969 /* NotificationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		EB5AF5902BCD2B5900506969 /* devicemonitorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = devicemonitorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5AF5942BCD2B5900506969 /* devicemonitorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devicemonitorUITests.swift; sourceTree = "<group>"; };
 		EB5AF5962BCD2B5900506969 /* devicemonitorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = devicemonitorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB5AF5A32BCD2C2500506969 /* DeviceMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMonitor.swift; sourceTree = "<group>"; };
+		EB5AF5A52BCD2C6500506969 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				EB5AF57C2BCD2B5900506969 /* Assets.xcassets */,
 				EB5AF5812BCD2B5900506969 /* devicemonitor.entitlements */,
 				EB5AF57E2BCD2B5900506969 /* Preview Content */,
+				EB5AF5A32BCD2C2500506969 /* DeviceMonitor.swift */,
+				EB5AF5A52BCD2C6500506969 /* NotificationManager.swift */,
 			);
 			path = devicemonitor;
 			sourceTree = "<group>";
@@ -261,6 +267,8 @@
 			files = (
 				EB5AF57B2BCD2B5800506969 /* ContentView.swift in Sources */,
 				EB5AF5792BCD2B5800506969 /* devicemonitorApp.swift in Sources */,
+				EB5AF5A62BCD2C6500506969 /* NotificationManager.swift in Sources */,
+				EB5AF5A42BCD2C2500506969 /* DeviceMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
